@@ -34,7 +34,7 @@ function page() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center mt-12 gap-4">
+    <div className="flex flex-col items-center justify-center mt-12 gap-4 px-5">
       <h1 className="text-3xl text-center font-bold">Summarize PDF 📚</h1>
       <p className="text-sm text-center font-semibold">
         Turn Lengthy PDFs into Concise Summaries Instantly with AI-Powered
