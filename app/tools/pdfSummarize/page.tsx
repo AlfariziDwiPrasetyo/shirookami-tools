@@ -21,7 +21,6 @@ function page() {
       const dataBuffer = Buffer.from(arrayBuffer);
       const pdfText = await getPdf(JSON.parse(JSON.stringify(dataBuffer)));
       const result = await generateGeminiText(pdfText);
-      console.log(result);
       setText(result);
       setLoading(false);
     }
@@ -47,9 +46,10 @@ function page() {
         name="pdfFile"
         className="max-w-lg"
         onChange={submitHandler}
+        disabled={loading == null ? false : loading}
       />
 
-      {loading === null ? ( // Render based on loading state
+      {loading === null ? (
         <p className="text-xs text-muted-foreground">
           Select a PDF file to start generating...
         </p>

@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "./ui/card";
 import { ArrowRightIcon } from "lucide-react";
+import AnimatedShinyText from "./ui/animated-shiny-text";
 
 type CardToolsProps = {
   title: string;
@@ -53,9 +54,9 @@ export function CardTools({
           </Card>
           {/* Overlay text */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="font-semibold text-muted-foreground">
-              Working on it 🔨
-            </span>
+            <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+              <span className="text-xs font-semibold">Working on it 🔨</span>
+            </AnimatedShinyText>
           </div>
         </div>
       )}
