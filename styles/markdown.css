@@ -1,0 +1,17 @@
+/* markdown.css */
+.markdown-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-content ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.markdown-content a {
+  color: blue;
+  text-decoration: underline;
+}
