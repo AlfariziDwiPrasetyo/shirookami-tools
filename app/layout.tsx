@@ -17,8 +17,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Any Tools",
-  description: "Tools",
+  title: "Shirookami Tools",
+  description:
+    "A collection of versatile and efficient tools designed to simplify your everyday tasks.",
+  metadataBase: new URL("https://tools.shirookami.my.id/"),
 };
 
 export default function RootLayout({
