@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import GridPattern from "@/components/ui/grid-pattern";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,10 +32,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
         <Navbar />
-        {children}
+        <main className="flex-grow">{children}</main>
+
         <GridPattern
           width={20}
           height={20}
@@ -44,6 +46,7 @@ export default function RootLayout({
             "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] "
           )}
         />
+        <Footer />
       </body>
     </html>
   );

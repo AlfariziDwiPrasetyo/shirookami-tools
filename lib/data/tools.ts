@@ -14,10 +14,10 @@ export const tools: ToolsType[] = [
     status: "done",
   },
   {
-    title: "Dummy",
-    link: "/tools/pdfSummarize",
-    description: "not yet",
-    status: "coming soon",
+    title: "Leap Year 📅",
+    link: "/tools/leapYear",
+    description: "Determining a leap year for campus Midterm exams",
+    status: "done",
   },
   {
     title: "Dummy",
